@@ -21,10 +21,12 @@ public class A2Q2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
+//new city
         City kw = new City();
+        //new robot
         Robot bob = new Robot(kw, 3, 1, Direction.EAST);
 
+        //creating the hurdles and ground
         new Wall(kw, 3, 1, Direction.SOUTH);
         new Wall(kw, 3, 2, Direction.SOUTH);
         new Wall(kw, 3, 9, Direction.SOUTH);
@@ -39,15 +41,12 @@ public class A2Q2 {
         new Wall(kw, 3, 4, Direction.EAST);
         new Wall(kw, 3, 7, Direction.EAST);
 
+        //creating the finish line
         new Thing(kw, 3, 9);
 
-
+        //loop
         while (true) {
-            //if(bob.frontIsClear()== true) {
-            // bob.move();
-            //}
-
-
+            // if it isn't clear it goes around the one in front & moves to next spot
             if (bob.frontIsClear() == false) {
                 bob.turnLeft();
                 bob.move();
@@ -63,16 +62,15 @@ public class A2Q2 {
 
 
 
-
+            // moves to next spot if clear
             } else if (bob.frontIsClear() == true) {
                 bob.move();
             }
-
+            // when in the last spot it stops
             if (bob.getAvenue() == 9) {
                 break;
             }
         }
 
     }
-} 
-
+}

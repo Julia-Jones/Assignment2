@@ -20,11 +20,11 @@ public class A2Q1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        //city and robot
         City kw = new City();
         
         Robot bob = new Robot(kw,1,1,Direction.EAST); 
-        
+        // creating all the things
         new Thing(kw,1,2);
         new Thing(kw,1,3);
         new Thing(kw,1,4);
@@ -36,15 +36,14 @@ public class A2Q1 {
         new Thing(kw,1,10);
         new Thing(kw,1,11);
         
+        //looping it to pick up all the things until the 7th one 
         while(true){
-        
-       
         
         while(bob.canPickThing()){
             bob.pickThing();
         }
         bob.move();
-        
+        //breaks after picking up the 7th item
         if(bob.countThingsInBackpack()==7){
            break;
             
@@ -55,6 +54,7 @@ public class A2Q1 {
         
        
     }
+        // after done picking thing up 
         while(bob.canPickThing()){
             bob.move();
         }
