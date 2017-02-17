@@ -55,7 +55,7 @@ public class A2Q4 {
         new Wall(kw, 2, 3, Direction.EAST);
         new Wall(kw, 2, 3, Direction.NORTH);
 
-
+        //Moving around the castle
         while (true) {
             bob.move();
             bob.move();
