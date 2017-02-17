@@ -55,9 +55,8 @@ public class A2Q4 {
         new Wall(kw, 2, 3, Direction.EAST);
         new Wall(kw, 2, 3, Direction.NORTH);
 
-        while (true) {
-         while(bob.getAvenue()<=1){
 
+        while (true) {
             bob.move();
             bob.move();
             bob.turnLeft();
@@ -76,11 +75,11 @@ public class A2Q4 {
             bob.turnLeft();
             bob.turnLeft();
             bob.turnLeft();
-            bob.move();
-            bob.move();
+
 
         }
 
+
     }
-  }
 }
+
