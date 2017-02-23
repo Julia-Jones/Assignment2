@@ -133,11 +133,38 @@ public class A2Challenge {
         new Thing(kw, 9, 4);
         new Thing(kw, 9, 6);
 
+        karel.move();
+        karel.turnLeft();
 
-        
-        
-        
-        
+        while (true) {
+            
+            while (karel.canPickThing() == true) {
+                karel.pickThing();
+                karel.move();
+                
+                while (karel.frontIsClear() == false) {
+                karel.turnLeft();
+                karel.turnLeft();
+                karel.move(); 
+                karel.move();
+                karel.move();
+                karel.move();
+                karel.turnLeft();
+                karel.move();
+                karel.turnLeft();
+                 
+                }
+                  
+                
 
+
+
+            }
+
+
+
+    
+
+        }
     }
 }

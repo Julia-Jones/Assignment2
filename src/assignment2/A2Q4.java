@@ -22,6 +22,7 @@ public class A2Q4 {
     public static void main(String[] args) {
         // TODO code application logic here
         //robots and city
+        
         City kw = new City();
         Robot bob = new Robot(kw, 0, 0, Direction.EAST);
 
