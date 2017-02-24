@@ -26,6 +26,8 @@ public class A2Challenge {
         Robot karel = new Robot(kw, 0, 2, Direction.SOUTH);
         Robot tina = new Robot(kw, 0, 2, Direction.SOUTH);
 
+        // I was not able to finish this questions
+        
         //making the road
         new Wall(kw, 0, 0, Direction.WEST);
         new Wall(kw, 1, 0, Direction.WEST);
